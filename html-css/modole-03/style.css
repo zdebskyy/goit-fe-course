@@ -168,11 +168,22 @@ p {
     
 }
 
+.up {
+  margin-top: 135px;
+}
+
+.down {
+  margin-top: 140px;
+}
+
 .phototitle {
   margin-top: 32px;
   margin-bottom: 31px;
   color: #b4ad9e;
+  font-family: "Ubuntu";
 }
+
+
 
 
 
