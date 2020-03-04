@@ -116,10 +116,12 @@ section {
 }
 
 
-.nav-item.active {
+
+ul :hover  {
   color: #03a9f4;
-  
 }
+
+
 
 ul {
   text-align: center;
@@ -127,27 +129,37 @@ ul {
   margin-bottom: 104px; 
 }
 
+.nav-item {
+  text-decoration: none;
+}
+
 li {
-    display: inline-block;
+  display: inline-block;
   font-size: 14px;
   font-family: "Playfair Display";
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 1.714;
-  margin: 0 54px;
+  margin-right: 107px;
 }
 
+li:last-child {
+  margin-right: 0px;
+}
           
 
 article {
   display: inline-block;
   width: 420px;
   height: 280px;
-  margin-right: 28px;
-  margin-left: 28px;
+  margin-right: 60px;
   text-align: left;
-  
 }
+
+.article :nth-child(even) {
+  margin-right: 0px;
+}
+
 
 h2 {
   
