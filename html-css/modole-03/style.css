@@ -106,9 +106,10 @@ img {
   max-width: 100%;
   
 }
+ 
 
 section {
-  margin: 0 150px;
+  margin: 0 auto;
   text-align: center;
   max-width: 1200px;
   
@@ -117,6 +118,7 @@ section {
 
 .nav-item.active {
   color: #03a9f4;
+  
 }
 
 ul {
@@ -132,10 +134,10 @@ li {
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 1.714;
- 
-  
+  margin: 0 54px;
 }
 
+          
 
 article {
   display: inline-block;
@@ -143,6 +145,8 @@ article {
   height: 280px;
   margin-right: 28px;
   margin-left: 28px;
+  text-align: left;
+  
 }
 
 h2 {
@@ -185,8 +189,6 @@ p {
 
 
 
-
-
 button{
 
   border: 1px solid black;
@@ -204,5 +206,5 @@ button{
 div {
   margin-top: 56px;
   margin-bottom: 70px;
-  margin-left: 628px;
+  
 }
