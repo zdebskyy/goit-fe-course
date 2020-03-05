@@ -114,14 +114,13 @@ img {
   width: 900px;
   margin: 0 auto;
   text-align: center;
-  font-size: 0;
 }
 
 section {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 70px;
-  
+  font-size: 0; 
 }
 
 ul {
@@ -137,8 +136,7 @@ li {
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 1.714;
-  margin-right: 107px;
-  
+  margin-right: 107px;  
 }
 
 li:last-child {
@@ -159,13 +157,11 @@ a {
   width: 420px;
   margin-right: 60px;
   text-align: left;
-
 }
 
-.article :nth-child(even) {
+.article:nth-child(even) {
   margin-right: 0px;
 }
-
 
 h2 {
   
@@ -208,7 +204,6 @@ p {
 
 
 button {
-
   border: 1px solid black;
   text-align: center;
   width: 162px;
@@ -218,9 +213,15 @@ button {
   color: rgb(98, 98, 98);
   line-height: 1.2;
   background-color: white;
-  
 }
 
+.button :hover {
+  color: white;
+  background-color: rgb(98, 98, 98);
+  border-color: rgb(98, 98, 98);
+}
+
+
 div {
-  margin-top: 56px;
+  padding-top: 56px;
 }
