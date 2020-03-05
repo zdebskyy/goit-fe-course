@@ -104,33 +104,30 @@ input, select {
 
 img {
   max-width: 100%;
-  
+}
+* {
+  margin: 0;
+  padding: 0;
 }
  
+.container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
 
 section {
   margin: 0 auto;
   text-align: center;
-  max-width: 1200px;
+  padding-bottom: 70px;
   
 }
 
-
-
-ul :hover  {
-  color: #03a9f4;
-}
-
-
-
 ul {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 104px; 
-}
-
-.nav-item {
-  text-decoration: none;
+  padding-top: 70px;
+  padding-bottom: 104px; 
 }
 
 li {
@@ -141,19 +138,28 @@ li {
   text-transform: uppercase;
   line-height: 1.714;
   margin-right: 107px;
+  
 }
 
 li:last-child {
   margin-right: 0px;
 }
           
+.nav-item :hover  {
+  color: #03a9f4;
+}
 
-article {
+a {
+  text-decoration: none;
+  color: rgb(98, 98, 98); 
+}
+
+.article {
   display: inline-block;
   width: 420px;
-  height: 280px;
   margin-right: 60px;
   text-align: left;
+
 }
 
 .article :nth-child(even) {
@@ -201,7 +207,7 @@ p {
 
 
 
-button{
+button {
 
   border: 1px solid black;
   text-align: center;
@@ -217,6 +223,4 @@ button{
 
 div {
   margin-top: 56px;
-  margin-bottom: 70px;
-  
 }
