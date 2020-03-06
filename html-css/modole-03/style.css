@@ -65,8 +65,8 @@ h2 {
     color: rgb(98, 98, 98);
     line-height: 1.2;
     text-align: left;
-    padding-top: 36px;
-    padding-bottom: 45px;
+    margin: 0px;
+    margin-bottom: 20px;
     
   
 }
@@ -78,13 +78,14 @@ p {
     color: rgb(98, 98, 98);
     line-height: 1.714;
     text-align: left;
+    margin: 0px;
     
 }
 
 
 .phototitle {
-  padding-top: 32px;
-  padding-bottom: 31px;
+  margin: 0px;
+  margin-bottom: 20px;
   color: #b4ad9e;
   font-family: "Ubuntu";
 }
