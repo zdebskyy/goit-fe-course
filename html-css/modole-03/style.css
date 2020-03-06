@@ -50,6 +50,7 @@ a {
   display: inline-block;
   width: 420px;
   margin-right: 60px;
+  margin-bottom: 135px;
   text-align: left;
 }
 
@@ -64,8 +65,8 @@ h2 {
     color: rgb(98, 98, 98);
     line-height: 1.2;
     text-align: left;
-    margin-top: 36px;
-    margin-bottom: 45px;
+    padding-top: 36px;
+    padding-bottom: 45px;
     
   
 }
@@ -80,17 +81,10 @@ p {
     
 }
 
-.up {
-  margin-top: 135px;
-}
-
-.down {
-  margin-top: 140px;
-}
 
 .phototitle {
-  margin-top: 32px;
-  margin-bottom: 31px;
+  padding-top: 32px;
+  padding-bottom: 31px;
   color: #b4ad9e;
   font-family: "Ubuntu";
 }
