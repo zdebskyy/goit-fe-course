@@ -42,6 +42,7 @@ li:last-child {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: rgb(98, 98, 98); 
 }
