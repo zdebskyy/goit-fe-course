@@ -3,7 +3,7 @@ img {
   max-width: 100%;
 }
 
- 
+
 .container {
   width: 900px;
   margin: 0 auto;
@@ -14,13 +14,13 @@ section {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 70px;
-  font-size: 0; 
+  font-size: 0;
 }
 
 ul {
   text-align: center;
   padding-top: 70px;
-  padding-bottom: 104px; 
+  padding-bottom: 104px;
 }
 
 li {
@@ -30,13 +30,17 @@ li {
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 1.714;
-  margin-right: 107px;  
+  margin-right: 107px;
+}
+.list-item {
+  margin: 0;
+  padding: 0;
 }
 
 li:last-child {
   margin-right: 0px;
 }
-          
+
 .link-item:hover  {
   color: #03a9f4;
 }
@@ -44,7 +48,7 @@ li:last-child {
 a {
   display: block;
   text-decoration: none;
-  color: rgb(98, 98, 98); 
+  color: rgb(98, 98, 98);
 }
 
 .article {
@@ -60,7 +64,7 @@ a {
 }
 
 h2 {
-  
+
     font-size: 30px;
     font-family: "Playfair Display";
     color: rgb(98, 98, 98);
@@ -68,8 +72,8 @@ h2 {
     text-align: left;
     margin: 0px;
     margin-bottom: 20px;
-    
-  
+
+
 }
 
 p {
@@ -80,7 +84,7 @@ p {
     line-height: 1.714;
     text-align: left;
     margin: 0px;
-    
+
 }
 
 
