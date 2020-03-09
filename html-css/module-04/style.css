@@ -18,18 +18,18 @@ body {
     width: 1110px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 80px;
 }
 .navigation {
     text-decoration: none;
     display: block;
 }
 .navigation.logo {
-    margin-right: 610px;
+    margin-right: 480px;
 }
 .product-item {
     list-style-type: none;
     display: inline-block;
-    text-align: center;
     font-size: 0;
 }
 .products {
@@ -52,7 +52,6 @@ body {
     font-size: 14px;
 }
 .stuff-item {
-    display: inline-block;
     text-align: center;
     list-style-type: none;
     font-size: 0;
@@ -69,6 +68,27 @@ body {
     display: inline-block;
     margin-right: 34px;
     padding-top: 42px;
+    font-size: 14px;
+    font-family: open sans;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.786;
+}
+.navigation.logo {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(81, 81, 81);
+}
+.navigation.logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: bold;   
+}
+
+.navigation {
+    color: black;
+}
+.navigation:hover{
+    color: rgb(26, 188, 156);  
 }
 
 .nav-item:last-child {
@@ -77,4 +97,100 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
 }
+.first {
+    padding-top: 110px;
+    padding-bottom: 32px;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+}
+.second {
+    padding-top: 106px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-family: "Roboto";
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    line-height: 0.667;
+}
+.main-line {
+    margin: 0 auto;
+    margin-bottom: 92px;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    border: none;
+    
+}
+.main-line2 {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    border: none;
+}
+.news-line {
+        background-color: rgb(78, 198, 171);
+        width: 136px;
+        height: 3px;
+        margin-top: 14px;
+        margin-bottom: 32px;   
+        border: none;
+}
+.bottom {
+    font-size: 18px;
+    font-family: open sans;
+    font-weight: bold; 
+    text-align: left;
+    color: rgb(81, 81, 81);
+}
+    
+ 
+.text {
+    font-size: 14px;
+    font-family: open sans;
+    color: rgb(85, 82, 82);
+    line-height: 1.857;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+
+button {
+    display: block;
+}
+
+  .button {
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    width: 159px;
+    height: 51px;
+    font-size: 14px;
+    color: white;
+    font-family: open sans;
+  }
+  .button:hover {
+      background-color: white;
+      color: rgb(78, 198, 171);
+      border-color: rgb(78, 198, 171);
+  }
+
+
+  .price {
+    background-color: rgb(50, 50, 50);
+    position: absolute;
+    width: 255px;
+    height: 40px;
+    top: 624px;
+  }
+  
+
+
+  
+  
+  
