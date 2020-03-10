@@ -28,8 +28,7 @@ body {
     display: block;
 }
 
-.navigation.logo {
-    display: block; 
+.navigation.logo { 
     font-size: 30px;
     font-weight: normal;
     color: rgb(81, 81, 81);
@@ -201,6 +200,8 @@ img {
 .bottom-link {
     display: block;
     text-decoration: none;
+    width: 200px;
+    text-align: left;
 }
 .goods-item {
     color: white;
