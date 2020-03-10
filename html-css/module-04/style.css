@@ -9,7 +9,6 @@ html {
     margin: 0;
     padding: 0;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +17,10 @@ body {
     width: 1110px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 45px;
+}
+.container.main{
+    padding: 0;
 }
 .navigation {
     text-decoration: none;
@@ -33,13 +35,18 @@ body {
     font-size: 0;
 }
 .products {
+    float: left;
     width: 255px;
-    display: inline-block;
+    margin-bottom: 30px;
     margin-right: 30px;
 }
 .products:nth-child(4n) {
     margin-right: 0;
 }
+.products:nth-child(n+5)  {
+    margin-bottom: 0;
+}
+
 .stuff {
     display: inline-block;
     width: 350px;
@@ -47,6 +54,8 @@ body {
 }
 .bottom {
     font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 14px;
 }
 .text {
     font-size: 14px;
@@ -59,15 +68,17 @@ body {
 .stuff:last-child {
     margin-right: 0;
 }
-
 .list-item {
     margin: 0;
     padding: 0;
     }
+.page-header {
+    padding-top: 42px;
+    padding-bottom: 110px;
+}
 .nav-item {
     display: inline-block;
     margin-right: 34px;
-    padding-top: 42px;
     font-size: 14px;
     font-family: open sans;
     font-weight: bold;
@@ -83,7 +94,12 @@ body {
     color: rgb(26, 188, 156);
     font-weight: bold;   
 }
-
+.products-link {
+    display: block;
+}
+.photo:hover{
+    color: rgb(26, 188, 156);
+}
 .navigation {
     color: black;
 }
@@ -94,23 +110,30 @@ body {
 .nav-item:last-child {
     margin-right: 0;
 }
+
+
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 30px;
 }
 .first {
-    padding-top: 110px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     font-size: 48px;
     font-family: "Roboto";
     color: rgb(81, 81, 81);
     text-transform: uppercase;
     line-height: 0.667;
 }
+.section.goods {
+    font-size: 0;
+}
+.section.news{
+    padding-top: 80px;
+} 
 .second {
-    padding-top: 106px;
-    margin-bottom: 30px;
+    padding-top: 104px;
+    padding-bottom: 30px;
     font-size: 48px;
     font-family: "Roboto";
     color: rgb(81, 81, 81);
@@ -128,7 +151,6 @@ img {
 }
 .main-line2 {
     margin: 0 auto;
-    margin-bottom: 80px;
     background-color: rgb(26, 188, 156);
     width: 164px;
     height: 7px;
@@ -161,34 +183,33 @@ img {
   }
   
 
-button {
+.button {
     display: block;
-}
-
-  .button {
     border-radius: 3px;
-    background-color: rgb(78, 198, 171);
-    width: 159px;
-    height: 51px;
-    font-size: 14px;
-    color: white;
-    font-family: open sans;
-  }
-  .button:hover {
+    border-color: rgb(78, 198, 171); 
+}
+.news-link:hover { 
       background-color: white;
       color: rgb(78, 198, 171);
-      border-color: rgb(78, 198, 171);
   }
+.news-link {
+    background-color: rgb(78, 198, 171);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 17px 45px;
+    font-family: open sans;
+    color: white;
+    display: block;   
+}
 
-
-  .price {
+  /* .price {
     background-color: rgb(50, 50, 50);
     position: absolute;
     width: 255px;
     height: 40px;
     top: 624px;
   }
-  
+   */
 
 
   
