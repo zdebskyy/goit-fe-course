@@ -17,15 +17,21 @@ body {
     width: 1110px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 45px;
 }
 .header-nav {
-    text-align: right;
     line-height: 32px;
+}
+.list-item {
+    float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .navigation {
     text-decoration: none;
-    display: block;
+
 }
 
 .navigation.logo { 
@@ -64,7 +70,7 @@ body {
 }
 
 .stuff {
-    display: inline-block;
+    float: left;
     width: 350px;
     margin-right: 30px;
 }
@@ -84,10 +90,7 @@ body {
 .stuff:last-child {
     margin-right: 0;
 }
-.list-item {
-    margin: 0;
-    padding: 0;
-    }
+
 .page-header {
     padding-top: 42px;
     padding-bottom: 110px;
@@ -118,12 +121,10 @@ img {
     max-width: 100%;
     height: auto;
 }
-.section.goods {
-    font-size: 0;
-    margin-bottom: 104px;
-}
-.section.news{
+
+.section{
     padding-top: 80px;
+    padding-bottom: 104px;
 } 
 .section-title {
     padding-bottom: 30px;
@@ -142,14 +143,7 @@ img {
     height: 7px;
     border: none;
 }
-.news-line {
-        background-color: rgb(78, 198, 171);
-        width: 136px;
-        height: 3px;
-        margin-top: 14px;
-        margin-bottom: 32px;   
-        border: none;
-}
+
 .bottom {
     font-size: 18px;
     font-family: open sans;
@@ -157,6 +151,17 @@ img {
     text-align: left;
     color: rgb(81, 81, 81);
 }
+
+.bottom::after {
+ content: "";
+ display: block;
+ margin: 14px 0 28px 0;
+ background-color: rgb(26, 188, 156);
+ width: 136px;
+ height: 3px;   
+}
+  
+
 .text {
     font-size: 14px;
     font-family: open sans;
