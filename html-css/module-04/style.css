@@ -96,13 +96,15 @@ body {
     padding-bottom: 110px;
 }
 .nav-item {
-    display: inline-block;
+    float: left;
     margin-right: 34px;
     font-size: 14px;
     font-family: open sans;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 0.786;
+    list-style-type: none;
+    padding-top: 12px;
 }
 .products-link {
     display: block;
@@ -126,6 +128,9 @@ img {
     padding-top: 80px;
     padding-bottom: 104px;
 } 
+.section.news{
+    padding-top: 0;
+}
 .section-title {
     padding-bottom: 30px;
     font-size: 48px;
