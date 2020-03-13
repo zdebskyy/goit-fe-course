@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container {
+      width: 1110px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .page-header{
+      padding: 45px 0;
+  }
+  .logo {
+      text-decoration: none;
+      float: left;
+  }
+  .nav-item{
+      list-style-type: none;
+      margin-right: 34px;
+      float: left;
+  }
+  .nav-item:last-child{
+      margin-right: 0;
+  }
+  .list-item {
+      float: right;
+  }
+  .nav-link{
+      text-decoration: none;
+  }
+ 
