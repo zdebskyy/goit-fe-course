@@ -155,12 +155,13 @@ img {
     font-weight: bold; 
     text-align: left;
     color: rgb(81, 81, 81);
+    margin-bottom: 20px;
 }
 
 .bottom::after {
  content: "";
  display: block;
- margin: 14px 0 28px 0;
+ margin-top: 14px;
  background-color: rgb(26, 188, 156);
  width: 136px;
  height: 3px;   
