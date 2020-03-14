@@ -67,7 +67,7 @@ html {
     background-image: linear-gradient( rgba(0, 0, 2, 0.4), rgba(0, 0, 2, 0.4)), url(img/slide4.png);
     height: 600px;
     position: relative;
-    background: no-repeat;
+    
 }
 .banner-title{
     list-style-type: none;
@@ -96,13 +96,19 @@ html {
 .button {
     padding: 52px;
     margin-top: 224px;
-       
+    border: none;
+    background-color: rgb(140, 217, 196); 
+}
+.button:hover{
+    background-color: rgb(26, 188, 156);
 }
 .left{
     float: left;
+    background-image: url(img/al.png);
 }
 .right {
     float: right;
+    background-image: url(img/ar.png);
 }
 
 
