@@ -24,11 +24,34 @@ html {
   .logo {
       text-decoration: none;
       float: left;
+      font-size: 30px;
+      font-weight: normal;
+      color: rgb(81, 81, 81);
+      font-family: open sans;
+      float: left;
+      text-transform: uppercase;
   }
+  .logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: bold;
+    font-family: open sans;   
+}
+    .logo:hover{
+        color: rgb(26, 188, 156);   
+    }
   .nav-item{
       list-style-type: none;
       margin-right: 34px;
       float: left;
+      font-size: 14px;
+      font-family: open sans;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.786;
+      padding-top: 12px;   
+  }
+  .nav-link:hover{
+        color: rgb(26, 188, 156); 
   }
   .nav-item:last-child{
       margin-right: 0;
@@ -38,5 +61,110 @@ html {
   }
   .nav-link{
       text-decoration: none;
+      color: black;
   }
- 
+.banner{
+    background-image: linear-gradient( rgba(0, 0, 2, 0.4), rgba(0, 0, 2, 0.4)), url(img/slide4.png);
+    height: 600px;
+    position: relative;
+    background: no-repeat;
+}
+.banner-title{
+    list-style-type: none;
+}
+.main-title{
+    font-size: 60px;
+    font-family: "Roboto";
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35%;
+    right: 18%;
+}
+.subtitle{
+    font-size: 30px;
+    font-family: "Roboto";
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    position: absolute;
+    top: 49%;
+    right: 29%;
+}
+
+
+.button {
+    padding: 52px;
+    margin-top: 224px;
+       
+}
+.left{
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+  
+
+.collection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.collection{
+    background-color: rgb(233, 240, 253);
+}
+.title{
+    font-size: 48px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    color: rgb(81, 81, 81);
+}
+.title::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    background-color: rgb(26, 188, 156);
+    width: 164px;
+    height: 7px;
+    border: none;
+    margin-bottom: 80px;
+}
+  .stuff{
+      width: 255px;
+      list-style-type: none;
+      float: left;
+      margin-right: 30px;
+  }
+  .stuff:last-child{
+      margin-right: 0;
+  }
+ .photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+ .footer {
+     background-color: rgb(50, 50, 50);
+     padding: 45px 0;
+ }
+ .span{
+     color: white;
+     font-size: 16px;
+     font-family: "open sans";
+ }
+ .shit::after{
+     content: "\00A9";
+     margin-left: 5px;
+ }
+ .shit3::before{
+    content: "\2758";
+    margin-right: 5px;
+ }
+ .shit4 {
+     color: rgb(26, 188, 156);
+     font-size: 16px;
+     font-family: "open sans";
+     text-decoration: none;
+ }
