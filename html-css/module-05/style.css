@@ -60,10 +60,11 @@ html {
   .nav-link{
       text-decoration: none;
       color: black;
+      display: block;
   }
   .nav-item{
     list-style-type: none;
-      float: left;
+    float: left;
   }
 .banner{
     background-image: linear-gradient( rgba(0, 0, 2, 0.4), rgba(0, 0, 2, 0.4)), url(img/slide4.png);
@@ -160,6 +161,7 @@ html {
     height: auto;
  }
  .footer {
+     text-align: center;
      background-color: rgb(50, 50, 50);
      padding: 45px 0;
  }
