@@ -21,6 +21,7 @@ html {
       padding: 45px 0;
   }
   .logo {
+      display: block;
       text-decoration: none;
       float: left;
       font-size: 30px;
@@ -40,7 +41,6 @@ html {
   .nav-link{
       display: block;
       list-style-type: none;
-      margin-right: 34px;
       font-size: 14px;
       font-family: open sans;
       font-weight: bold;
@@ -56,6 +56,7 @@ html {
   }
   .list-item {
       float: right;
+      
   }
   .nav-link{
       text-decoration: none;
@@ -65,25 +66,30 @@ html {
   .nav-item{
     list-style-type: none;
     float: left;
+    margin-right: 34px;
   }
 .banner{
     background-image: linear-gradient( rgba(0, 0, 2, 0.4), rgba(0, 0, 2, 0.4)), url(img/slide4.png);
     height: 600px;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    
 }
 .banner-title{
     list-style-type: none;
+}
+.position{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%); 
 }
 .main-title{
     font-size: 60px;
     font-family: "Roboto";
     color: white;
     text-transform: uppercase;
-    position: absolute;
-    top: 35%;
-    right: 24%;
+  
 }
 .subtitle{
     font-size: 30px;
@@ -91,9 +97,6 @@ html {
     color: white;
     font-weight: lighter;
     text-transform: uppercase;
-    position: absolute;
-    top: 49%;
-    right: 35%;
 }
 
 
