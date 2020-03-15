@@ -15,8 +15,7 @@ html {
   }
   .container {
       width: 1110px;
-      margin: 0 auto;
-      text-align: center;
+      margin: 0 auto;  
   }
   .page-header{
       padding: 45px 0;
@@ -28,7 +27,6 @@ html {
       font-weight: normal;
       color: rgb(81, 81, 81);
       font-family: open sans;
-      float: left;
       text-transform: uppercase;
   }
   .logo::first-letter {
@@ -39,10 +37,10 @@ html {
     .logo:hover{
         color: rgb(26, 188, 156);   
     }
-  .nav-item{
+  .nav-link{
+      display: block;
       list-style-type: none;
       margin-right: 34px;
-      float: left;
       font-size: 14px;
       font-family: open sans;
       font-weight: bold;
@@ -62,6 +60,10 @@ html {
   .nav-link{
       text-decoration: none;
       color: black;
+  }
+  .nav-item{
+    list-style-type: none;
+      float: left;
   }
 .banner{
     background-image: linear-gradient( rgba(0, 0, 2, 0.4), rgba(0, 0, 2, 0.4)), url(img/slide4.png);
@@ -95,19 +97,24 @@ html {
 
 .button {
     padding: 52px;
-    margin-top: 224px;
     border: none;
-    background-color: rgb(140, 217, 196); 
+    background-color: rgb(140, 217, 196);
+    background-repeat: no-repeat;
+    position: absolute;
 }
 .button:hover{
     background-color: rgb(26, 188, 156);
 }
+.button-box{
+    position: relative;
+}
 .left{
-    float: left;
-    background-image: url(img/al.png);
+    left: 0;
+    background-image:  url(img/al.png);
+   
 }
 .right {
-    float: right;
+    right: 0;
     background-image: url(img/ar.png);
 }
 
@@ -126,6 +133,7 @@ html {
     font-family: "Roboto";
     text-transform: uppercase;
     color: rgb(81, 81, 81);
+    text-align: center;
 }
 .title::after {
     content: "";
@@ -174,3 +182,4 @@ html {
      font-family: "open sans";
      text-decoration: none;
  }
+
