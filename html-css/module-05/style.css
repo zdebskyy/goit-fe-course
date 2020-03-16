@@ -210,15 +210,33 @@ html {
     max-width: 100%;
     height: auto;
  }
-.cover {
-    width: 236;
-    height: 262;
-    color: rgb(50, 50, 50);
+.cover{
     position: absolute;
+    width: 236px;
+    height: 264px;
+    background: black;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+   
 }
-
-
-
+.cover-list{
+    list-style-type: none;
+    
+}
+.cover-button{
+    width: 48px;
+    height: 48px;
+    border: 2px solid white;
+  
+}
+.cover-button.big{
+    width: 163px;
+    height: 48px;
+    border: 2px solid white;
+    
+}
 
 
 
