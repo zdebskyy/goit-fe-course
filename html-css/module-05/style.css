@@ -73,14 +73,18 @@ html {
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+.banner-container{
     position: relative;
+    min-height: 600px;
 }
 .banner-title{
     list-style-type: none;
     position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%) translateY(-50%); 
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%); 
 }
 
 .main-title{
@@ -106,17 +110,15 @@ html {
     opacity: 0.5;
     background-repeat: no-repeat;
     position: absolute;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
     background-position: center;
 }
 .button:hover{
     background-color: rgb(26, 188, 156);
     opacity: 1;
 }
-.button-box{
-    position: relative;
-    height: 600px;
-}
+
 .left{
     left: 0;
     background-image:  url(img/al.png);
@@ -159,32 +161,81 @@ html {
       list-style-type: none;
       float: left;
       margin-right: 30px;
+      position: relative;
   }
   .stuff:last-child{
       margin-right: 0;
+  }
+  .stuff-link{
+      border: none;
+  }
+  .description{
+      width: 255px;
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to right, rgb(50, 50, 50) 80%,#8c8c8c 20%);
+  }
+  .description:hover{
+    background: linear-gradient(to right, #1abc9c 80%, #7fd9c7 20%);
+  }
+  .stuff:hover .description{
+    background: linear-gradient(to right, #1abc9c 80%, #7fd9c7 20%);   
+  }
+  .title-link {
+      display: block;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 1.778;
+      font-family: "Roboto";
+      float: left;
+      margin-left: 10px;
+      width: 80%;
+  }
+  .price {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.778;
+    font-family: "Roboto";
+    float: right;
+    font-weight: 700;
+    margin-right: 10px;
+    padding-top: 4px;
   }
  .photo{
     display: block;
     max-width: 100%;
     height: auto;
  }
+.cover {
+    width: 236;
+    height: 262;
+    color: rgb(50, 50, 50);
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
  .footer {
      text-align: center;
      background-color: rgb(50, 50, 50);
      padding: 45px 0;
  }
- .span{
+ .info-stuff{
      color: white;
      font-size: 16px;
      font-family: "open sans";
- }
- .shit::after{
-     content: "\00A9";
-     margin-left: 5px;
- }
- .shit3::before{
-    content: "\2758";
-    margin-right: 5px;
  }
  .shit4 {
      color: rgb(26, 188, 156);
@@ -193,3 +244,4 @@ html {
      text-decoration: none;
  }
 
+  
