@@ -128,10 +128,6 @@ html {
     right: 0;
     background-image: url(img/ar.png);
 }
-
-
-  
-
 .collection {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -145,16 +141,18 @@ html {
     text-transform: uppercase;
     color: rgb(81, 81, 81);
     text-align: center;
+    margin-bottom: 80px;
+    
 }
 .title::after {
     content: "";
     display: block;
-    margin: 30px auto;
+    margin: 0 auto;
     background-color: rgb(26, 188, 156);
     width: 164px;
     height: 7px;
     border: none;
-    margin-bottom: 80px;
+    margin-top: 30px;
 }
   .stuff{
       width: 255px;
@@ -228,14 +226,12 @@ html {
 .cover-item:nth-child(n+3){
     margin-right: 0;
 }
-
 .cover-list{
     list-style-type: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    position: absolute;
-     
+    position: absolute;   
 }
 .cover-button{
     width: 48px;
