@@ -12,19 +12,38 @@ html {
     width: 1110px;
     margin: 0 auto;
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+}
 
 .nav-list{
     list-style-type: none;
     display: flex;
-    width: 490px;
-    justify-content: flex-end;
-    justify-content: space-between;
 }
-
-.logo-box {
-    display: flex;
-    width: 92px;
+.nav-item{
+    margin-right: 56px;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-link{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(149, 225, 211);
+    text-decoration: none;
+    line-height: 30px;
 }
 .logo{
-    justify-content: flex-start;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(149, 225, 211);
 }
+
