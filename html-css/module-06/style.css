@@ -16,7 +16,6 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    
 }
 
 .nav-list{
@@ -38,6 +37,26 @@ html {
     text-decoration: none;
     line-height: 30px;
 }
+
+.nav-item::after {
+    content: "";
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 50px;
+    height: 3px;
+    opacity: 0;
+}
+.nav-link:hover{
+    color:  rgb(243, 129, 129);
+}
+.nav-item:hover .nav-link::after{
+    content: "";
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 50px;
+    height: 3px;
+    opacity: 1;
+}
 .logo{
     display: block;
     text-decoration: none;
@@ -47,3 +66,34 @@ html {
     color: rgb(149, 225, 211);
 }
 
+.services-title{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+}
+.title2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.title2::after{
+    content: "";
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.section-cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.service-list{
+    margin-right: 20px;
+    max-width: 392px;
+    height: 120px;
+}
