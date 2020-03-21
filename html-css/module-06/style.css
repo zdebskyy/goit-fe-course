@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    width: 490px;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.logo-box {
+    display: flex;
+    width: 92px;
+}
+.logo{
+    justify-content: flex-start;
+}
