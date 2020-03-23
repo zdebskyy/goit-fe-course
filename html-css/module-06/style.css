@@ -184,12 +184,22 @@ img{
     font-style: italic;
     text-align: center;
 }
-
+.team-photo{
+    margin-bottom: 30px;
+}
 .team-item{
     width: 380px;
     position: relative;
+    margin-bottom: 150px;
 }
-
+ .team-item:hover .bg{
+ transform: translate(-10px, -10px);
+ transition: 0.3s ease-in;
+ }
+ .team-item:hover .team-photo{
+    transform: translate(-10px, -10px); 
+    transition: 0.3s ease-in;  
+ }
 .bg{
     position: absolute;
     top: 0;
@@ -199,11 +209,10 @@ img{
 
 }
 .bg:hover{
-    position: absolute;
     background: linear-gradient( 90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
     width: 100%;
     height: 470px;
-    box-shadow: 10px 10px 10px #95e1d3;
+    box-shadow: 10px 10px 0px #95e1d3;
 }
 
 
@@ -223,12 +232,14 @@ img{
     height: 56px;
     background-color: #fce38a;
     opacity: 0;
+    margin-right: 3px;   
 }
 .bg:hover .fb{
-    opacity: 1;
+    opacity: 1;  
 }
 .fb:hover{
     background-color: #95e1d3;
+    transition: 0.3s ease-in;
 }
 .face{
     background-image: url(img/facebook.png);
@@ -254,9 +265,11 @@ img{
 
 
 .footer{
-    padding: 64px 0;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+
     
 }
 .mail-button{
@@ -279,18 +292,14 @@ img{
     width: 234px;
     height: 44px;
     margin-left: auto;
+    font-family: "Montserrat";
 }
 .footer-info{
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
 }
-/* .footer-info::before{
-    content: "";
-    width: 1200px;
-    height: 6px;
-    color: rgb(51, 51, 51);
-} */
+
 .laaqiq{
     display: inline-block;
     font-size: 14px;
