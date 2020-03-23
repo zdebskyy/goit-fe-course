@@ -174,7 +174,7 @@ img{
     color: rgb(51, 51, 51);
     text-transform: uppercase;
     text-align: center;
-    margin-top: 30px;
+  
 }
 .position{
     font-size: 15px;
@@ -183,13 +183,31 @@ img{
     line-height: 1.6;
     font-style: italic;
     text-align: center;
-    display: block;
+   
+}
+
+.team-item{
+    width: 390px;
+    height: 480px;
+    position: relative;  
+}
+.team-photo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.team-photo:hover{
+    left: 0;
+    top: 0;
+}
+.team-item:hover{
+    background-color: #95e1d3;
 }
 
 
-
-
-
+.social-item {
+    list-style-type: none;
+}
 
 .footer{
     padding: 64px 0;
