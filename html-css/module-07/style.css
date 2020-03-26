@@ -8,6 +8,10 @@ html {
     margin: 0;
     padding: 0;
 }
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap');
+@import url("https://use.typekit.net/bqo4pim.css");
 .main {
     width: 1400px;
 }
@@ -20,11 +24,11 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 45px 0;
-    margin-bottom: 80px;
+    
 }
 .nav-list{
     list-style-type: none;
-    width: 480px;
+    min-width: 480px;
     display: flex;
     justify-content: space-between;
 }
@@ -44,13 +48,10 @@ html {
     display: block;
     text-decoration: none;
     font-size: 26px;
-    font-family: 'Wisdom Script Regular';
+    font-family: "Wisdom Script AI";
     color: #fed136;
     cursor: pointer;
 }
-
-
-
 
 .list{
     list-style-type: none;
@@ -59,7 +60,7 @@ html {
 }
 .list-item{
     flex-basis: 286px;
-    position: relative;
+    
     padding-top: 66px;
     margin-bottom: 120px;
 }
@@ -68,46 +69,42 @@ html {
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
+    
 }
 .title-span {
-    display: block;
+   text-align: center;
     font-size: 16px;
+    font-family: droid-serif, serif;
+    font-style: italic;
 }
 .item-title{
     text-align: center;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
     margin-bottom: 10px;
 }
-.item-title::before{
+.list-item::before{
     content: "";
     display: block;
     width: 73px;
     height: 73px;
-    background-image: url(img/Circle.png);
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translatex(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
-.item-title.basket::before{
-    background-image: url(img/Basket.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.list-item.basket::before{
+   background-image: url(img/Basket.png);
+    
 }
-.item-title.laptop::before{
+.list-item.laptop::before{
     background-image: url(img/Laptop.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    
 } 
-.item-title.lock::before{
+.list-item.lock::before{
     background-image: url(img/Locked.png);
-    background-position: center;
-    background-repeat: no-repeat;
+   
 }
 
 .text{
@@ -119,8 +116,10 @@ html {
 }
 .feedback{
     height: 676px;
-    background-image: url(img/Background.png);
+    background-image: url(img/bg.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .container.feedback{
@@ -128,10 +127,7 @@ html {
     padding-top: 100px;
 }
 .button{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 24%;
+    margin: 0 auto;
     width: 240px;
     height: 58px;
     border: none;
@@ -142,6 +138,11 @@ html {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 30px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #fed136;
 }
 .white{
     color: white;
@@ -149,23 +150,35 @@ html {
 }
 .grey{
     margin-top: 15px;
+    margin-bottom: 50px;
     color: #3e3e3e;
 }
 .form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
 }
-.form-list{
-    display: flex;
-    flex-direction: column;
-    height: 208px;
-    flex-wrap: wrap; 
-}
+
 .form-item{
     margin-bottom: 26px;
     list-style: none;
 }
-.form-item:nth-child(n+3){
+.form-item:last-child{
     margin-bottom: 0;
+}
+.textarea{
+    width: 455px;
+    height: 208px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+.textarea::placeholder{
+    color: #bbbbbb;
 }
 .regular{
     margin-right: 30px;
@@ -178,15 +191,10 @@ html {
     border-radius: 3px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 700;
     color: #3e3e3e;
-    text-align: left;
 }
 .form-item input::placeholder{
     color: #bbbbbb;
-}
-.big input{
-    height: 208px;
 }
 
