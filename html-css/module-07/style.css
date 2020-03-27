@@ -9,9 +9,6 @@ html {
     padding: 0;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap');
-@import url("https://use.typekit.net/bqo4pim.css");
 .main {
     width: 1400px;
 }
@@ -48,7 +45,9 @@ html {
     display: block;
     text-decoration: none;
     font-size: 26px;
-    font-family: "Wisdom Script AI";
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+   text-transform: capitalize;
     color: #fed136;
     cursor: pointer;
 }
@@ -57,12 +56,12 @@ html {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 120px;
 }
 .list-item{
-    flex-basis: 286px;
-    
+    flex-basis: 286px;  
     padding-top: 66px;
-    margin-bottom: 120px;
+  
 }
 .section-title{
     text-align: center;
@@ -123,7 +122,6 @@ html {
     
 }
 .container.feedback{
-    position: relative;
     padding-top: 100px;
 }
 .button{
