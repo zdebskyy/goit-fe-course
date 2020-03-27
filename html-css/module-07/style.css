@@ -51,12 +51,13 @@ html {
     color: #fed136;
     cursor: pointer;
 }
-
+.services{
+    padding-bottom: 120px;
+}
 .list{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
 }
 .list-item{
     flex-basis: 286px;  
@@ -195,4 +196,21 @@ html {
 .form-item input::placeholder{
     color: #bbbbbb;
 }
-
+input[type="email"]:invalid{
+    border: 1px solid red;
+}
+input[type="email"]:valid{
+    border: 2px solid green;
+}
+input[type="text"]:invalid{
+    border: 1px solid red;
+}
+input[type="text"]:valid{
+    border: 2px solid green;
+}
+.textarea:invalid{
+    border: 1px solid red;
+}
+.textarea:valid{
+    border: 2px solid green;
+}
