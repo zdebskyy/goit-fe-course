@@ -21,3 +21,10 @@ a{
     width: 320px;
     margin: 0 auto;
 }
+.log-list{
+    list-style: none;
+}
+.banner {
+    background-image: linear-gradient( rgba(0, 0, 2, 0.1), rgba(0, 0, 2, 0.1)), url(img/bg.png);
+    height: 700px;
+}
