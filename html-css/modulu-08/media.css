@@ -1,11 +1,147 @@
 @media (max-width: 767px){
     .logo{
-        display: none;
+       display: none; 
     }
     .banner{
         height: 540px;
         background-position: center;
-        max-width: 320px;
-
     }
+    .find{
+        border-radius: 20px;
+        background-color: rgb(255, 78, 80);
+        width: 280px;
+        height: 40px;
+        font-size: 14px;
+        font-family: 'montserrat';
+        color: white;
+        font-weight: 700;
+    }
+    .find:hover{
+        color: rgb(255, 78, 80);
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(255, 78, 80);
+        border-width: 2px;
+    }
+    
+    .log-link{
+        color: black;
+        font-size: 14px;
+        font-family: 'montserrat';
+        font-weight: 700;
+        padding: 10px 10px;
+    }
+    
+    .log-link:hover{
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 94px;
+        height: 40px;
+    }
+      
+    .logo-mob{
+        text-align: center;
+        font-family: 'montserrat';
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .section-title{
+        text-align: center;
+        font-family: 'montserrat';
+        text-transform: uppercase;
+        color: white;
+        font-size: 30px;
+    }
+    .subtitle{
+        text-align: center;
+        font-family: 'roboto';
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .partners-title{
+        font-size: 22px;
+        font-family: 'montserrat';
+        text-align: center;
+        font-weight: 700; 
+        padding: 50px 0;
+    }
+    .partners-photo{
+        width: 122px;
+        height: 122px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .partners-photo::after{
+        content: "";
+        display: block;
+        width: 41px;
+        height: 41px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .pin1{
+        background-image: url(img/IMG_7344.PNG);
+        background-repeat: no-repeat;
+    }
+    .pin2{
+        background-image: url(img/IMG_7345.PNG);
+        background-repeat: no-repeat;
+    }
+    .pin3{
+        background-image: url(img/IMG_7346.PNG);
+        background-repeat: no-repeat;
+    }
+    .pin4{
+        background-image: url(img/IMG_7347.PNG);
+        background-repeat: no-repeat;
+    }
+    .partners-list{
+        list-style: none;
+        max-width: 217px;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .name{
+        font-size: 14px;
+        font-family: 'montserrat';
+        text-align: center;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .about{
+        font-family: 'roboto';
+        font-size: 14px;
+        color: #666666;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    .others{
+            border: 2px solid rgb(255, 78, 80);
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            width: 284px;
+            height: 44px;
+            color: rgb(255, 78, 80); 
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'montserrat';
+            margin-top: 20px;
+    }
+   .others:hover{
+       background-color: rgb(255, 78, 80);
+       border-color: rgb(255, 255, 255);
+       color: rgb(255, 255, 255);
+   }
+
 }
+
+
+
+
+
+
+  
