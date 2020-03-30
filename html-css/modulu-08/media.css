@@ -1,14 +1,30 @@
 @media (max-width: 767px){
     .logo{
-       display: none; 
+        text-align: center;
+        font-family: 'montserrat';
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .header{
+        position: absolute;
+    }
+    .one{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .banner{
         height: 540px;
         background-position: center;
     }
     .find{
+        display: block;
+        margin: 0 auto;
         border-radius: 20px;
         background-color: rgb(255, 78, 80);
+        border: none;
         width: 280px;
         height: 40px;
         font-size: 14px;
@@ -22,9 +38,11 @@
         border-color: rgb(255, 78, 80);
         border-width: 2px;
     }
-    
+    .log-list{
+        margin-bottom: 120px;
+    }
     .log-link{
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 14px;
         font-family: 'montserrat';
         font-weight: 700;
@@ -32,19 +50,10 @@
     }
     
     .log-link:hover{
-        border: 2px solid black;
+        border: 2px solid rgb(255, 255, 255);
         border-radius: 20px;
         width: 94px;
         height: 40px;
-    }
-      
-    .logo-mob{
-        text-align: center;
-        font-family: 'montserrat';
-        text-transform: uppercase;
-        color: white;
-        font-weight: 700;
-        font-size: 20px;
     }
     .section-title{
         text-align: center;
@@ -52,13 +61,17 @@
         text-transform: uppercase;
         color: white;
         font-size: 30px;
+        margin-bottom: 20px;
     }
     .subtitle{
+        width: 217px;
+        margin: 0 auto;
         text-align: center;
         font-family: 'roboto';
         color: white;
         font-size: 18px;
         font-weight: 100;
+        margin-bottom: 20px;
     }
     .partners-title{
         font-size: 22px;
@@ -71,33 +84,37 @@
         width: 122px;
         height: 122px;
         margin: 0 auto;
-        position: relative;
     }
-    .partners-photo::after{
+    .partners-item{
+        position: relative;
+        width: 217px;
+        height: 222px;
+    }
+    .partners-item::after{
         content: "";
         display: block;
         width: 41px;
         height: 41px;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 90px;
+        right: 45px;
     }
-    .pin1{
+    .partners-item.pin1::after{
         background-image: url(img/IMG_7344.PNG);
-        background-repeat: no-repeat;
+    }
+    .partners-item.pin2::after{
+        background-image: url(img/IMG_7345.PNG);
+    }
+    .partners-item.pin3::after{
+        background-image: url(img/IMG_7346.PNG);
+    }
+    .partners-item.pin4::after{
+        background-image: url(img/IMG_7347.PNG);
     }
     .pin2{
-        background-image: url(img/IMG_7345.PNG);
-        background-repeat: no-repeat;
+        margin-bottom: 30px;
     }
-    .pin3{
-        background-image: url(img/IMG_7346.PNG);
-        background-repeat: no-repeat;
-    }
-    .pin4{
-        background-image: url(img/IMG_7347.PNG);
-        background-repeat: no-repeat;
-    }
+ 
     .partners-list{
         list-style: none;
         max-width: 217px;
@@ -120,6 +137,8 @@
         margin-bottom: 20px;
     }
     .others{
+            display: block;
+            margin: 0 auto;
             border: 2px solid rgb(255, 78, 80);
             border-radius: 20px;
             background-color: rgb(255, 255, 255);
@@ -129,7 +148,7 @@
             font-size: 14px;
             font-weight: 700;
             font-family: 'montserrat';
-            margin-top: 20px;
+            margin-bottom: 30px;
     }
    .others:hover{
        background-color: rgb(255, 78, 80);
