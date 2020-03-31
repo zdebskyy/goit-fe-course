@@ -29,4 +29,6 @@ a{
 .banner {
     background-image: linear-gradient( rgba(0, 0, 2, 0.1), rgba(0, 0, 2, 0.1)), url(img/bg.png);
     height: 700px;
+    max-width: 1440px;
+    background-size: cover;
 }
