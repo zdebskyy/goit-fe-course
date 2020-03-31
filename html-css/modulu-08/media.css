@@ -159,7 +159,7 @@
 
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width: 1439px) {
     .container {
         width: 660px;
         margin: 0 auto;
@@ -431,8 +431,70 @@ img{
     }
     .partners-list{
        display: flex;
+       justify-content: space-between;
        flex-direction: row;
        max-width: 940px;
+       list-style: none;
+}
+.name{
+    font-size: 14px;
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.about{
+    font-family: 'roboto';
+    font-size: 14px;
+    color: #666666;
+    font-weight: 100;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.others{
+        display: block;
+        margin: 0 auto;
+        border: 2px solid rgb(255, 78, 80);
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        width: 197px;
+        height: 44px;
+        color: rgb(255, 78, 80); 
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'montserrat';
+        margin-bottom: 30px;
+}
+.others:hover{
+    background-color: rgb(255, 78, 80);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+ }
+.partners-item{
+    position: relative;
+    width: 220px;
+    height: auto;
+}
+.partners-item::after{
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    bottom: 110px;
+    right: 45px;
+}
+.partners-item.pin1::after{
+    background-image: url(img/IMG_7344.PNG);
+}
+.partners-item.pin2::after{
+    background-image: url(img/IMG_7345.PNG);
+}
+.partners-item.pin3::after{
+    background-image: url(img/IMG_7346.PNG);
+}
+.partners-item.pin4::after{
+    background-image: url(img/IMG_7347.PNG);
 }
 .pin1{
     order: 1;
@@ -446,6 +508,13 @@ img{
 .pin4{
     order: 4;
 }
+.partners-title{
+    font-size: 22px;
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 700; 
+    padding: 50px 0;
+
 }
 
   
