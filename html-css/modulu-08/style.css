@@ -32,3 +32,28 @@ a{
     max-width: 1440px;
     background-size: cover;
 }
+.pin{
+    position: relative;
+}
+.pin::after{
+    content: "";
+    display: block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}
+
+.pin.pin1::after{
+    background-image: url(img/IMG_7344.PNG); 
+}
+.pin.pin2::after{
+    background-image: url(img/IMG_7345.PNG);
+}
+.pin.pin3::after{
+    background-image: url(img/IMG_7346.PNG);
+}
+.pin.pin4::after{
+    background-image: url(img/IMG_7347.PNG);
+}

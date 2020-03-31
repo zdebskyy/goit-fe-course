@@ -195,11 +195,13 @@ img{
  .team-item:hover .bg{
  transform: translate(-10px, -10px);
  transition: 0.3s ease-in;
+ 
  }
  .team-item:hover .team-photo{
     transform: translate(-10px, -10px); 
-    transition: 0.3s ease-in;  
+    transition: 0.3s ease-in;
  }
+
 .bg{
     position: absolute;
     top: 0;
