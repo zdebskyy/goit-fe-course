@@ -165,9 +165,13 @@ ul{
 .pin.pin4::after{
     background-image: url(img/IMG_7347.PNG);
 }
+
 @media (min-width: 768px) {
     .log-list{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
+   
+    
 }
