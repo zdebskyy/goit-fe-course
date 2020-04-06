@@ -17,6 +17,10 @@ a{
     display: block;
     text-decoration: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 .container{
     margin: 0 auto;
 }
@@ -96,6 +100,10 @@ a{
 .partners-list{
     text-align: center;
 }
+.pin{
+    width: 217px;
+    margin: 0 auto;
+}
 .partners-photo{
     margin: 0 auto;
 }
@@ -156,4 +164,10 @@ a{
 }
 .pin.pin4::after{
     background-image: url(img/IMG_7347.PNG);
+}
+@media (min-width: 768px) {
+    .log-list{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
