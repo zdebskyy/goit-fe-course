@@ -18,7 +18,7 @@
         height: 540px;
         background-position: center;
         background-size: cover;
-        margin-bottom: 20px;
+       
     }
     .find{
         display: block;
@@ -143,6 +143,9 @@
         width: 660px;
         margin: 0 auto;
     }
+    .section{
+        padding-bottom: 50px;
+    }
     .header{
         position: absolute;
         left: 50%;
@@ -169,6 +172,7 @@
         height: 700px;
         background-position: center;
         background-size: cover;
+       
     }
     .section-title{
         text-align: center;
@@ -190,6 +194,7 @@
 }
 .one{
     padding-top: 230px;
+    
 }
 .find{
     display: block;
@@ -234,7 +239,7 @@
     font-family: 'montserrat';
     text-align: center;
     font-weight: 700; 
-    padding: 50px 0;
+    margin-bottom: 20px;
 }
 .partners-item{
     width: 230px;
@@ -263,6 +268,7 @@ img{
     font-family: 'montserrat';
     text-align: center;
     font-weight: 700;
+    margin-bottom: 20px;
    
 }
 .about{
@@ -270,7 +276,6 @@ img{
     font-size: 14px;
     color: #666666;
     font-weight: 100;
-    margin-bottom: 20px;
     text-align: center;
 }
 .others{
@@ -400,6 +405,7 @@ img{
     font-family: 'montserrat';
     text-align: center;
     font-weight: 700;
+    margin-bottom: 20px;
 
 }
 .about{
@@ -407,7 +413,7 @@ img{
     font-size: 14px;
     color: #666666;
     font-weight: 100;
-    margin-bottom: 20px;
+   
     text-align: center;
 }
 .others{
@@ -451,7 +457,7 @@ img{
     font-family: 'montserrat';
     text-align: center;
     font-weight: 700; 
-    padding: 50px 0;
+    margin-bottom: 50px;
 
 }
 
