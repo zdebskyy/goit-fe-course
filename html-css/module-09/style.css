@@ -118,6 +118,7 @@ ul{
     font-size: 14px;
     color: #666666;
     font-weight: 100;
+    text-align: center;
     
 }
 .others{
@@ -172,6 +173,5 @@ ul{
         justify-content: flex-end;
         align-items: center;
     }
-   
     
 }
