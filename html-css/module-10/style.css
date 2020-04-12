@@ -1,0 +1,206 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a{
+display: block;
+text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/************************************
+**************HEADER*****************
+************************************/
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 170px;
+}
+.nav-list{
+    display: flex;
+    min-width: 620px;
+    justify-content: space-between;
+    text-align: center;
+}
+.logo{
+    font-family: "montserrat";
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.logo:hover{
+    color: rgb(252, 227, 138);
+}
+.nav-link{
+    font-family: "montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    line-height: 30px;
+}
+.nav-link:hover{
+    border-bottom: 3px solid rgb(252, 227, 138);
+    color: rgb(252, 227, 138);
+}
+  
+.banner{
+    height: 1000px;
+    background: linear-gradient( to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white{
+    max-width: 830px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 72px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+   
+}
+.first{
+    display: block;
+    font-family: "montserrat";
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 150px;
+    margin-bottom: 50px;
+}
+.button-more{
+    display: block;
+    width: 160px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+/*************************************************************
+************************** SECTION - SERVICE *****************
+*************************************************************/
+.service{
+    padding: 50px 0;
+}
+.black{
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 30px;
+}
+.second{
+    display: block;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+.second::after{
+    display: block;
+    content: "";
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.service-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item{
+    width: 350px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 50px;
+}
+.service-item::before{
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.alarm{
+    background-image: url(img/ALARM.png);
+    background-repeat: no-repeat;
+}
+.line{
+    background-image: url(img/LINE.png);
+    background-repeat: no-repeat;
+}
+.pc{
+    background-image: url(img/pc.png);
+    background-repeat: no-repeat;
+}
+.book{
+    background-image: url(img/BOOK.png);
+    background-repeat: no-repeat;
+}
+.home{
+    background-image: url(img/HOME.png);
+    background-repeat: no-repeat;
+}
+.image{
+    background-image: url(img/IMAGE.png);
+    background-repeat: no-repeat;
+}
+.service-item:nth-child(n+4){
+    margin-bottom: 0;
+}
+.item-title{
+    font-size: 14px;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.item-text{
+    font-size: 15px;
+    font-family: "roboto";
+    color: #999999;
+}
+
+/*************************************************************
+************************** SECTION - TEAM    *****************
+*************************************************************/
+.team-text{
+    font-size: 15px;
+    font-family: "roboto";
+    color: #999999;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
