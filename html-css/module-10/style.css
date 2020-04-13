@@ -1,8 +1,12 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 *{
     margin: 0;
@@ -25,21 +29,31 @@ ul{
     list-style: none;
 }
 
-/************************************
-**************HEADER*****************
-************************************/
+/*******************************************************************************************
+*****************************HEADER*****************
+*******************************************************************************************/
 
 
 .nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 50px 0 170px;
 }
 .nav-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 620px;
-    justify-content: space-between;
-    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo{
     font-family: "montserrat";
@@ -64,9 +78,16 @@ ul{
     border-bottom: 3px solid rgb(252, 227, 138);
     color: rgb(252, 227, 138);
 }
-  
+.nav-svg{
+    fill:rgb(255, 255, 255);
+}
+.nav-svg:hover{
+    fill: #fce38a;
+}
 .banner{
     height: 1000px;
+    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9))), url(img/bg.png);
+    background: -o-linear-gradient( bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(img/bg.png);
     background: linear-gradient( to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%), url(img/bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -99,11 +120,12 @@ ul{
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 auto;
+     cursor: pointer;
 }
 
-/*************************************************************
+/********************************************************************************************************************
 ************************** SECTION - SERVICE *****************
-*************************************************************/
+********************************************************************************************************************/
 .service{
     padding: 50px 0;
 }
@@ -131,9 +153,14 @@ ul{
     margin-top: 30px;
 }
 .service-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .service-item{
     width: 350px;
@@ -151,27 +178,27 @@ ul{
     left: 0;
 }
 .alarm{
-    background-image: url(img/ALARM.png);
+    background-image: url(img/clock-svg.svg);
     background-repeat: no-repeat;
 }
 .line{
-    background-image: url(img/LINE.png);
+    background-image: url(img/line-svg.svg);
     background-repeat: no-repeat;
 }
 .pc{
-    background-image: url(img/pc.png);
+    background-image: url(img/pc-svg.svg);
     background-repeat: no-repeat;
 }
 .book{
-    background-image: url(img/BOOK.png);
+    background-image: url(img/book-svg.svg);
     background-repeat: no-repeat;
 }
 .home{
-    background-image: url(img/HOME.png);
+    background-image: url(img/home-svg.svg);
     background-repeat: no-repeat;
 }
 .image{
-    background-image: url(img/IMAGE.png);
+    background-image: url(img/image-svg.svg);
     background-repeat: no-repeat;
 }
 .service-item:nth-child(n+4){
@@ -190,17 +217,210 @@ ul{
     color: #999999;
 }
 
-/*************************************************************
+/********************************************************************************************************************
 ************************** SECTION - TEAM    *****************
-*************************************************************/
+********************************************************************************************************************/
+.team{
+    padding: 50px 0 100px;
+}
 .team-text{
     font-size: 15px;
     font-family: "roboto";
+    font-weight: normal;
     color: #999999;
     text-align: center;
     margin-bottom: 30px;
 }
 .team-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
+.team-item{
+    position: relative;
+}
+.name{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+.position{
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+}
+
+.team-item:hover .team-photo{
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in; 
+}
+.team-item:hover .cover{
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+}
+.cover:hover{
+    background: -webkit-gradient( linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9)));
+    background: -o-linear-gradient( bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    background: linear-gradient( to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    -webkit-box-shadow: 10px 10px 0px #95e1d3;
+            box-shadow: 10px 10px 0px #95e1d3;
+    width: 100%;
+    height: 470px;
+}
+.social-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 470px;
+}
+.social-link{
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    margin-right: 2px;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+}
+.social-link:hover{
+    background-color: #f38181;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+.cover:hover .social-link{
+    opacity: 1;
+}
+.social-svg{
+    fill: #f38181;
+}
+.social-link:hover .social-svg{
+    fill: #e5e5e5;
+}
+
+
+/********************************************************************************************************************
+************************** footer  ***************************
+********************************************************************************************************************/
+.info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid #e5e5e5;
+}
+.laaqiq{
+    color: #f59191;
+}
+.mail{
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-family: "montserrat";
+    line-height: 44px;
+}
+.mail-button {
+    background-color: rgb(149, 225, 211);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    border: none;
+    width: 150px;
+    height: 44px;
+    cursor: pointer;
+  }
+
+.mail-box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5e5e5;
+    background-color: rgb(255, 255, 255);
+    width: 234px;
+    height: 44px;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+  }
+  
+
+  /* @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   
+    .alarm{
+        background-image: url(img/ALARM@2x.png);
+
+    }
+    .line{
+        background-image: url(img/LINE@2x.png);
+       
+    }
+    .pc{
+        background-image: url(img/pc@2x.png);
+        
+    }
+    .book{
+        background-image: url(img/BOOK@2x.png);
+        
+    }
+    .home{
+        background-image: url(img/HOME@2x.png);
+       
+    }
+    .image{
+        background-image: url(img/IMAGE@2x.png);
+       
+    }
+  } */
+
+
+
+
+  
+  
