@@ -76,7 +76,7 @@ text-decoration: none;
     border-bottom: 3px solid transparent;
     line-height: 30px;
 }
-.nav__link:hover{
+.nav-list__link:hover{
     border-bottom: 3px solid rgb(252, 227, 138);
     color: rgb(252, 227, 138);
 }
