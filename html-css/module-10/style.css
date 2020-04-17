@@ -94,24 +94,8 @@ text-decoration: none;
     background-repeat: no-repeat;
     background-position: center;
 }
-.white{
-    max-width: 830px;
-    margin: 0 auto;
-    color: #ffffff;
-    font-size: 72px;
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-   
-}
-.first{
-    display: block;
-    font-family: "montserrat";
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 150px;
-    margin-bottom: 50px;
-}
-.button-more{
+
+.section__button-more{
     display: block;
     width: 160px;
     height: 40px;
@@ -124,28 +108,28 @@ text-decoration: none;
     margin: 0 auto;
      cursor: pointer;
 }
-
+.section{
+    margin-bottom: 50px;
+    padding: 50px 0 ;
+}
 /********************************************************************************************************************
 ************************** SECTION - SERVICE *****************
 ********************************************************************************************************************/
-.service{
-    padding: 50px 0;
-}
-.black{
+
+.section__title{
     margin: 0 auto;
     font-size: 24px;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     margin-bottom: 30px;
 }
-.second{
+.section__span{
     display: block;
     font-family: "montserrat";
     text-transform: uppercase;
     font-size: 30px;
-    
 }
-.second::after{
+.section__span--after::after{
     display: block;
     content: "";
     background-color: rgb(243, 129, 129);
@@ -154,7 +138,17 @@ text-decoration: none;
     margin: 0 auto;
     margin-top: 30px;
 }
-.service-list{
+.section__title--white{
+    max-width: 830px;
+    color: #ffffff;
+    font-size: 72px;
+}
+.section__span--first{
+    color: #ffffff;
+    font-size: 150px;
+    margin-bottom: 50px;
+}
+.section__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -164,13 +158,14 @@ text-decoration: none;
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.service-list__item{
+.section-service__item{
     width: 350px;
     margin-bottom: 40px;
     position: relative;
     padding-left: 50px;
 }
-.service-list__item::before{
+
+.section-service__icon::before{
     display: block;
     content: "";
     width: 32px;
@@ -179,41 +174,41 @@ text-decoration: none;
     top: 0;
     left: 0;
 }
-.service-list__item--alarm{
+.section-service__icon--alarm{
     background-image: url(img/clock-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item--line{
+.section-service__icon--line{
     background-image: url(img/line-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item--pc{
+.section-service__icon--pc{
     background-image: url(img/pc-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item--book{
+.section-service__icon--book{
     background-image: url(img/book-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item--home{
+.section-service__icon--home{
     background-image: url(img/home-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item--image{
+.section-service__icon--image{
     background-image: url(img/image-svg.svg);
     background-repeat: no-repeat;
 }
-.service-list__item:nth-child(n+4){
+.section-service__icon:nth-child(n+4){
     margin-bottom: 0;
 }
-.service-list__title{
+.section-service__subtitle{
     font-size: 14px;
     font-family: "montserrat";
     text-transform: uppercase;
     color: #333333;
     margin-bottom: 10px;
 }
-.service-list__text{
+.section-service__text{
     font-size: 15px;
     font-family: "roboto";
     color: #999999;
@@ -222,10 +217,8 @@ text-decoration: none;
 /********************************************************************************************************************
 ************************** SECTION - TEAM    *****************
 ********************************************************************************************************************/
-.team{
-    padding: 50px 0 100px;
-}
-.team-text{
+
+.section-team__text{
     font-size: 15px;
     font-family: "roboto";
     font-weight: normal;
@@ -233,18 +226,11 @@ text-decoration: none;
     text-align: center;
     margin-bottom: 30px;
 }
-.team-list{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-}
-.team-item{
+
+.section-team__item{
     position: relative;
 }
-.name{
+.section-team__name{
     font-size: 14px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
@@ -252,7 +238,7 @@ text-decoration: none;
     text-align: center;
     padding: 20px 0 10px;
 }
-.position{
+.section-team__position{
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
@@ -261,7 +247,7 @@ text-decoration: none;
     text-align: center;
 }
 
-.team-item:hover .team-photo{
+.section-team__item:hover .section-team__photo{
     -webkit-transform: translate(-10px, -10px);
         -ms-transform: translate(-10px, -10px);
             transform: translate(-10px, -10px);
@@ -269,7 +255,7 @@ text-decoration: none;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in; 
 }
-.team-item:hover .cover{
+.section-team__item:hover .cover{
     -webkit-transform: translate(-10px, -10px);
         -ms-transform: translate(-10px, -10px);
             transform: translate(-10px, -10px);
@@ -293,7 +279,7 @@ text-decoration: none;
     width: 100%;
     height: 470px;
 }
-.social-list{
+.cover__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -305,8 +291,7 @@ text-decoration: none;
             align-items: center;
     height: 470px;
 }
-.social-link{
-    display: block;
+.cover__link{
     width: 56px;
     height: 56px;
     background-color: #fce38a;
@@ -323,19 +308,19 @@ text-decoration: none;
             align-items: center;
     
 }
-.social-link:hover{
+.cover__link:hover{
     background-color: #f38181;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
-.cover:hover .social-link{
+.cover:hover .cover__link{
     opacity: 1;
 }
 .social-svg{
     fill: #f38181;
 }
-.social-link:hover .social-svg{
+.cover__link:hover .social-svg{
     fill: #e5e5e5;
 }
 
@@ -343,23 +328,23 @@ text-decoration: none;
 /********************************************************************************************************************
 ************************** footer  ***************************
 ********************************************************************************************************************/
-.info{
+.footer{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 10px 0;
     border-top: 1px solid #e5e5e5;
 }
-.laaqiq{
+.footer__laaqiq{
     color: #f59191;
 }
-.mail{
+.footer__mail{
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.footer-info{
+.footer__info{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -367,7 +352,7 @@ text-decoration: none;
     font-family: "montserrat";
     line-height: 44px;
 }
-.mail-button {
+.footer__mail-button {
     background-color: rgb(149, 225, 211);
     color: #ffffff;
     font-weight: bold;
@@ -380,7 +365,7 @@ text-decoration: none;
     cursor: pointer;
   }
 
-.mail-box {
+.footer__mail-box {
     border-style: solid;
     border-width: 1px;
     border-color: #e5e5e5;
